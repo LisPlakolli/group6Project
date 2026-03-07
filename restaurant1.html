@@ -57,7 +57,7 @@
         </div>
         <!-- restaurant info-->
         <div class="container">
-            <div class="row gap-4">
+            <div class="row gap-4 restaurant-layout">
                 <div class="col-md-7 h-100">
                     <div>
                         <h1 class="mb-0 mt-3">Sunset Grill - Brooklyn</h1>
@@ -71,7 +71,7 @@
                         family meals.
                     </div>
                     <div class="row py-4 ">
-                        <div class="col-4">
+                        <div class="col-4 d-none d-md-block">
                             <div id="list-example" class="list-group">
                                 <a class="list-group-item list-group-item-action" href="#list-item-1">Classic
                                     Cheeseburger</a>
@@ -81,68 +81,63 @@
                                     Stick</a>
                             </div>
                         </div>
-                        <div class="col-8 ">
+                        <div class="col-12 col-md-8">
                             <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
                                 class="scrollspy-example list-scroll-section" tabindex="0">
-                                <div id="list-item-1" class="">
-                                    <div class=" border rounded-3 p-3">
-                                        <div class="d-flex justify-content-start align-items-center flex-wrap gap-3">
+                                <div id="list-item-1">
+                                    <div class="border rounded-3 p-3">
+                                        <div class="d-flex align-items-center gap-3">
                                             <div class="img-container object-fit">
                                                 <img class="menu-item-img" src="img/burger.jpg" alt="">
                                             </div>
-                                            <div>
+                                            <div class="flex-grow-1">
                                                 <h6 class="mb-1">Classic Cheeseburger</h6>
                                                 <p class="mb-0 text-muted">$12.99</p>
                                             </div>
-                                            <button type="button "
-                                                class="btn btn-outline-primary btn-md rounded-5 plus-btn ms-auto "
+                                            <button type="button"
+                                                class="btn btn-primary btn-md rounded-5 plus-btn ms-auto"
                                                 data-bs-toggle="modal" data-bs-target="#menuModal">
                                                 <i class="bi bi-plus"></i>
                                             </button>
                                         </div>
-
                                     </div>
                                 </div>
-                                <div id="list-item-2" class="">
-                                    <div class=" border rounded-3 p-3">
-                                        <div class="d-flex justify-content-start align-items-center flex-wrap gap-3">
+                                <div id="list-item-2">
+                                    <div class="border rounded-3 p-3">
+                                        <div class="d-flex align-items-center gap-3">
                                             <div class="img-container object-fit">
                                                 <img class="menu-item-img" src="img/chickenSalad.jpg" alt="">
                                             </div>
-                                            <div>
+                                            <div class="flex-grow-1">
                                                 <h6 class="mb-1">Chicken Caesar Salad</h6>
                                                 <p class="mb-0 text-muted">$10.50</p>
                                             </div>
-                                            <button type="button "
-                                                class="btn btn-outline-primary btn-md rounded-5 plus-btn ms-auto "
+                                            <button type="button"
+                                                class="btn btn-primary btn-md rounded-5 plus-btn ms-auto"
                                                 data-bs-toggle="modal" data-bs-target="#menuModal">
                                                 <i class="bi bi-plus"></i>
                                             </button>
-
                                         </div>
                                     </div>
                                 </div>
-                                <div id="list-item-3" class="">
-                                    <div class=" border rounded-3 p-3">
-                                        <div class="d-flex justify-content-start align-items-center flex-wrap gap-3">
+                                <div id="list-item-3">
+                                    <div class="border rounded-3 p-3">
+                                        <div class="d-flex align-items-center gap-3">
                                             <div class="img-container object-fit">
                                                 <img class="menu-item-img" src="img/mozzerellaStick.jpg" alt="">
                                             </div>
-                                            <div>
+                                            <div class="flex-grow-1">
                                                 <h6 class="mb-1">Mozzarella Sticks</h6>
                                                 <p class="mb-0 text-muted">$7.99</p>
                                             </div>
-                                            <button type="button "
-                                                class="btn btn-outline-primary btn-md rounded-5 plus-btn ms-auto "
+                                            <button type="button"
+                                                class="btn btn-primary btn-md rounded-5 plus-btn ms-auto"
                                                 data-bs-toggle="modal" data-bs-target="#menuModal">
                                                 <i class="bi bi-plus"></i>
                                             </button>
                                         </div>
-
                                     </div>
                                 </div>
-
-
                             </div>
                         </div>
                     </div>
@@ -274,7 +269,7 @@
                 </div>
 
             </div>
-
+        </div>
     </section>
     <section class="container mb-3"><!-- review section -->
         <div class="col-12 mt-4">

@@ -71,3 +71,31 @@ body {
     color: white;
     border-color: #f57421;
 }
+
+@media (max-width: 1200px) {
+    .restaurant-layout {
+        flex-direction: column;
+    }
+
+    .restaurant-layout>div {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .right-section {
+        text-align: start !important;
+        padding-top: 0 !important;
+    }
+}
+
+@media (max-width:768px) {
+    .list-scroll-section {
+        height: 100%;
+
+    }
+
+    .map-container {
+        display: none;
+    }
+}
