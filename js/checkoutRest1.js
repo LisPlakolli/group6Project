@@ -20,5 +20,27 @@ menu_items.forEach(menu_item => {
     checkout_summary_section.append(list_item)
 })
 
+let subtotal = menu_items.reduce((sum, item) => {
+    return sum + Number(item.price) * Number(item.quantity)
+}, 0)
+let tax = subtotal * 0.15
+let total = subtotal + tax
+
+let subtotal_item = document.createElement("li")
+subtotal_item.className = "list-group-item d-flex justify-content-between checkout-totals"
+subtotal_item.innerHTML = '<span>Subtotal</span><span>$' + subtotal.toFixed(2) + '</span>'
+
+let tax_item = document.createElement("li")
+tax_item.className = "list-group-item d-flex justify-content-between checkout-totals"
+tax_item.innerHTML = '<span>Tax (15%)</span><span>$' + tax.toFixed(2) + '</span>'
+
+let total_item = document.createElement("li")
+total_item.className = "list-group-item d-flex justify-content-between fw-bold checkout-totals"
+total_item.innerHTML = '<span>Total</span><span>$' + total.toFixed(2) + '</span>'
+
+checkout_summary_section.append(subtotal_item)
+checkout_summary_section.append(tax_item)
+checkout_summary_section.append(total_item)
+
 
 
