@@ -76,7 +76,39 @@
                             <label for="deliveryNotes" class="form-label">Delivery Instructions</label>
                             <textarea class="form-control" id="deliveryNotes" rows="2" placeholder="e.g. Leave at the front door, call upon arrival, etc."></textarea>
                         </div>
+
+                        <hr>
+                        <h5 class="mb-3">Payment Method</h5>
+
+                        <div>
+                            <div class="mb-3">
+                                <label for="cardNumber" class="form-label">Card Number</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-credit-card"></i></span>
+                                    <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9012 3456">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <label for="cardExpiry" class="form-label">Expiry Date</label>
+                                    <input type="text" class="form-control" id="cardExpiry" placeholder="MM/YY">
+                                </div>
+                                <div class="col-6">
+                                    <label for="cardCvv" class="form-label">CVV</label>
+                                    <input type="text" class="form-control" id="cardCvv" placeholder="123">
+                                </div>
+                            </div>
+                        </div>
                     </form>
+
+                    <div class="d-flex align-items-center gap-2 mb-3 mt-2">
+                        <i class="bi bi-clock text-muted"></i>
+                        <span class="text-muted">Estimated delivery: <strong class="text-dark">25–35 min</strong></span>
+                    </div>
+
+                    <button type="button" class="btn btn-primary w-100 py-2 fw-semibold" id="placeOrderBtn">
+                        Place Order
+                    </button>
                 </div>
             </div>
             <!-- Right column: Order summary -->
