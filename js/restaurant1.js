@@ -21,15 +21,25 @@ document.querySelectorAll(".quantity-control").forEach((control) => {
 });
 
 
-function checkoutRestaurant1() {
+function checkoutRestaurant() {
+    menu_list = []
+    let hasItems = false
     document.querySelectorAll(".quantity-control").forEach((control, index) => {
         const menuItemName = control.querySelector(".menu-item-name").textContent
         const menuItemPrice = control.querySelector(".menu-item-price").textContent.substring(1)
         const countOfElement = control.querySelector(".count").textContent
+        if (Number(countOfElement) > 0) {
+            hasItems = true
+        }
         menu_list.push({ "name": menuItemName, "price": menuItemPrice, "quantity": countOfElement })
     })
-    localStorage.setItem("menu_items", JSON.stringify(menu_list))
-    console.log(localStorage)
-    window.location.href = "checkoutRest1.html"
 
+    if (!hasItems) {
+        alert("Please add at least 1 item to your order before checking out.")
+        menu_list = []
+        return
+    }
+
+    localStorage.setItem("menu_items", JSON.stringify(menu_list))
+    window.location.href = "checkoutRest1.html"
 }

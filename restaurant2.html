@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/restaurant1.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <img src="img/logo.png" alt="FoodieVille Logo" class="nav-logo">
+            <a class="navbar-brand" href="#"><span class="text-primary fw-bold">Foodie</span><span
+                    class=" fw-bold">Ville</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Contact</a></li>
+                            <li><a class="dropdown-item" href="#">Orders</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- restaurant hero section -->
+    <section>
+        <div class="container-fluid p-0 ">
+            <div class="overflow-hidden " style="height: 260px;">
+                <img src="img/pizza.jpg" alt="Restaurant food" class="w-100 h-100" style="object-fit: cover;">
+            </div>
+        </div>
+        <!-- restaurant info-->
+        <div class="container">
+            <div class="row gap-4 restaurant-layout">
+                <div class="col-md-7 h-100">
+                    <div>
+                        <h1 class="mb-0 mt-3">Pizza Nut - Manhattan</h1>
+                        <p class="text-align-justify">456 Broadway, New York, NY 10012</p>
+                        Pizza Nut is a vibrant pizzeria known for its hand-tossed pies and signature nut-infused
+                        sauces. Whether you're craving a classic margherita or something more adventurous,
+                        Pizza Nut delivers bold flavors in every slice.
+                    </div>
+                    <div class="row py-4 ">
+                        <div class="col-4 d-none d-md-block">
+                            <div id="list-example" class="list-group">
+                                <a class="list-group-item list-group-item-action" href="#list-item-1">Margherita
+                                    Pizza</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-2">Pepperoni
+                                    Pizza</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-3">Garlic
+                                    Knots</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-4">Lebanese Sausage Pizza</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-5">Hawaiian Pizza</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-6">Cola</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-7">Lemonade</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-8">Water</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+                                class="scrollspy-example list-scroll-section" tabindex="0">
+                                <div id="list-item-1">
+                                    <div class="border rounded-3 p-3">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="img-container object-fit">
+                                                <img class="menu-item-img" src="img/pizza.jpg" alt="">
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-1">Margherita Pizza</h6>
+                                                <p class="mb-0 text-muted">$14.99</p>
+                                            </div>
+                                            <button type="button"
+                                                class="btn btn-primary btn-md rounded-5 plus-btn ms-auto"
+                                                data-bs-toggle="modal" data-bs-target="#menuModal">
+                                                <i class="bi bi-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="list-item-2">
+                                    <div class="border rounded-3 p-3">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="img-container object-fit">
+                                                <img class="menu-item-img" src="img/pizza.jpg" alt="">
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-1">Pepperoni Pizza</h6>
+                                                <p class="mb-0 text-muted">$16.99</p>
+                                            </div>
+                                            <button type="button"
+                                                class="btn btn-primary btn-md rounded-5 plus-btn ms-auto"
+                                                data-bs-toggle="modal" data-bs-target="#menuModal">
+                                                <i class="bi bi-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="list-item-3">
+                                    <div class="border rounded-3 p-3">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="img-container object-fit">
+                                                <img class="menu-item-img" src="img/pizza.jpg" alt="">
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-1">Garlic Knots</h6>
+                                                <p class="mb-0 text-muted">$5.99</p>
+                                            </div>
+                                            <button type="button"
+                                                class="btn btn-primary btn-md rounded-5 plus-btn ms-auto"
+                                                data-bs-toggle="modal" data-bs-target="#menuModal">
+                                                <i class="bi bi-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="list-item-4">
+                                    <div class="border rounded-3 p-3">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="img-container object-fit">
+                                                <img class="menu-item-img" src="img/pizza.jpg" alt="">
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-1">Lebanese Sausage Pizza</h6>
+                                                <p class="mb-0 text-muted">$17.99</p>
+                                            </div>
+                                            <button type="button"
+                                                class="btn btn-primary btn-md rounded-5 plus-btn ms-auto"
+                                                data-bs-toggle="modal" data-bs-target="#menuModal">
+                                                <i class="bi bi-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="list-item-5">
+                                    <div class="border rounded-3 p-3">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="img-container object-fit">
+                                                <img class="menu-item-img" src="img/pizza.jpg" alt="">
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-1">Hawaiian Pizza</h6>
+                                                <p class="mb-0 text-muted">$15.99</p>
+                                            </div>
+                                            <button type="button"
+                                                class="btn btn-primary btn-md rounded-5 plus-btn ms-auto"
+                                                data-bs-toggle="modal" data-bs-target="#menuModal">
+                                                <i class="bi bi-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="list-item-6">
+                                    <div class="border rounded-3 p-3">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="img-container object-fit">
+                                                <img class="menu-item-img" src="img/pizza.jpg" alt="">
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-1">Cola</h6>
+                                                <p class="mb-0 text-muted">$2.99</p>
+                                            </div>
+                                            <button type="button"
+                                                class="btn btn-primary btn-md rounded-5 plus-btn ms-auto"
+                                                data-bs-toggle="modal" data-bs-target="#menuModal">
+                                                <i class="bi bi-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="list-item-7">
+                                    <div class="border rounded-3 p-3">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="img-container object-fit">
+                                                <img class="menu-item-img" src="img/pizza.jpg" alt="">
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-1">Lemonade</h6>
+                                                <p class="mb-0 text-muted">$3.49</p>
+                                            </div>
+                                            <button type="button"
+                                                class="btn btn-primary btn-md rounded-5 plus-btn ms-auto"
+                                                data-bs-toggle="modal" data-bs-target="#menuModal">
+                                                <i class="bi bi-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="list-item-8">
+                                    <div class="border rounded-3 p-3">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="img-container object-fit">
+                                                <img class="menu-item-img" src="img/pizza.jpg" alt="">
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-1">Water</h6>
+                                                <p class="mb-0 text-muted">$1.49</p>
+                                            </div>
+                                            <button type="button"
+                                                class="btn btn-primary btn-md rounded-5 plus-btn ms-auto"
+                                                data-bs-toggle="modal" data-bs-target="#menuModal">
+                                                <i class="bi bi-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- menu items -->
+
+                <!-- Modal Section -->
+                <div class="col-md-3 pt-4 flex-fill text-end">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                        data-bs-target="#menuModal">
+                        Order Now
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade " id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-l modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="menuModalLabel">Menu</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-start">
+                                    <form>
+                                        <div class="d-flex flex-column gap-3">
+
+                                            <div class=" border rounded-3 p-2">
+                                                <div
+                                                    class="d-flex justify-content-between align-items-center flex-wrap gap-3 quantity-control">
+                                                    <div class="img-container object-fit">
+                                                        <img class="menu-item-img" src="img/pizza.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="mb-1 menu-item-name">Margherita Pizza</h6>
+                                                        <p class="mb-0 text-muted menu-item-price">$14.99</p>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center gap-2 ">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm minus-btn">
+                                                            <i class="bi bi-dash"></i>
+                                                        </button>
+                                                        <span class="fw-semibold count">0</span>
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm plus-btn">
+                                                            <i class="bi bi-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class=" border rounded-3 p-2">
+                                                <div
+                                                    class="d-flex justify-content-between align-items-center flex-wrap gap-3 quantity-control">
+                                                    <div class="img-container object-fit">
+                                                        <img class="menu-item-img" src="img/pizza.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="mb-1 menu-item-name">Pepperoni Pizza</h6>
+                                                        <p class="mb-0 text-muted menu-item-price">$16.99</p>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center gap-2 ">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm minus-btn">
+                                                            <i class="bi bi-dash"></i>
+                                                        </button>
+                                                        <span class="fw-semibold count">0</span>
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm plus-btn">
+                                                            <i class="bi bi-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class=" border rounded-3 p-2">
+                                                <div
+                                                    class="d-flex justify-content-between align-items-center flex-wrap gap-3 quantity-control">
+                                                    <div class="img-container object-fit">
+                                                        <img class="menu-item-img" src="img/pizza.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="mb-1 menu-item-name">Garlic Knots</h6>
+                                                        <p class="mb-0 text-muted menu-item-price">$5.99</p>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center gap-2 ">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm minus-btn">
+                                                            <i class="bi bi-dash"></i>
+                                                        </button>
+                                                        <span class="fw-semibold count">0</span>
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm plus-btn">
+                                                            <i class="bi bi-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class=" border rounded-3 p-2">
+                                                <div
+                                                    class="d-flex justify-content-between align-items-center flex-wrap gap-3 quantity-control">
+                                                    <div class="img-container object-fit">
+                                                        <img class="menu-item-img" src="img/pizza.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="mb-1 menu-item-name">Lebanese Sausage Pizza</h6>
+                                                        <p class="mb-0 text-muted menu-item-price">$17.99</p>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center gap-2 ">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm minus-btn">
+                                                            <i class="bi bi-dash"></i>
+                                                        </button>
+                                                        <span class="fw-semibold count">0</span>
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm plus-btn">
+                                                            <i class="bi bi-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class=" border rounded-3 p-2">
+                                                <div
+                                                    class="d-flex justify-content-between align-items-center flex-wrap gap-3 quantity-control">
+                                                    <div class="img-container object-fit">
+                                                        <img class="menu-item-img" src="img/pizza.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="mb-1 menu-item-name">Hawaiian Pizza</h6>
+                                                        <p class="mb-0 text-muted menu-item-price">$15.99</p>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center gap-2 ">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm minus-btn">
+                                                            <i class="bi bi-dash"></i>
+                                                        </button>
+                                                        <span class="fw-semibold count">0</span>
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm plus-btn">
+                                                            <i class="bi bi-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class=" border rounded-3 p-2">
+                                                <div
+                                                    class="d-flex justify-content-between align-items-center flex-wrap gap-3 quantity-control">
+                                                    <div class="img-container object-fit">
+                                                        <img class="menu-item-img" src="img/pizza.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="mb-1 menu-item-name">Cola</h6>
+                                                        <p class="mb-0 text-muted menu-item-price">$2.99</p>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center gap-2 ">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm minus-btn">
+                                                            <i class="bi bi-dash"></i>
+                                                        </button>
+                                                        <span class="fw-semibold count">0</span>
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm plus-btn">
+                                                            <i class="bi bi-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class=" border rounded-3 p-2">
+                                                <div
+                                                    class="d-flex justify-content-between align-items-center flex-wrap gap-3 quantity-control">
+                                                    <div class="img-container object-fit">
+                                                        <img class="menu-item-img" src="img/pizza.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="mb-1 menu-item-name">Lemonade</h6>
+                                                        <p class="mb-0 text-muted menu-item-price">$3.49</p>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center gap-2 ">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm minus-btn">
+                                                            <i class="bi bi-dash"></i>
+                                                        </button>
+                                                        <span class="fw-semibold count">0</span>
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm plus-btn">
+                                                            <i class="bi bi-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class=" border rounded-3 p-2">
+                                                <div
+                                                    class="d-flex justify-content-between align-items-center flex-wrap gap-3 quantity-control">
+                                                    <div class="img-container object-fit">
+                                                        <img class="menu-item-img" src="img/pizza.jpg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="mb-1 menu-item-name">Water</h6>
+                                                        <p class="mb-0 text-muted menu-item-price">$1.49</p>
+                                                    </div>
+
+                                                    <div class="d-flex align-items-center gap-2 ">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm minus-btn">
+                                                            <i class="bi bi-dash"></i>
+                                                        </button>
+                                                        <span class="fw-semibold count">0</span>
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm plus-btn">
+                                                            <i class="bi bi-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="pt-2">
+                                                <label for="specialInstructions" class="form-label">Extra
+                                                    Directions</label>
+                                                <textarea class="form-control" id="specialInstructions" rows="3"
+                                                    placeholder="Example: No pickles, extra dressing, sauce on the side"></textarea>
+                                            </div>
+
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-primary"
+                                        onclick="checkoutRestaurant()">Checkout</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-container py-4  overflow-hidden w-100" style="height: 350px;">
+                        <iframe class="w-100 h-100 border-0  rounded-3"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.4!2d-73.9987!3d40.7234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s456%20Broadway%2C%20New%20York%2C%20NY%2010012!5e0!3m2!1sen!2sus"
+                            loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="container mb-3"><!-- review section -->
+        <div class="col-12 mt-4">
+            <div class="card p-3 rounded-4">
+                <div class="row g-3 align-items-start">
+
+                    <!-- left rating section -->
+                    <div class="col-md-3 text-md-center">
+                        <div class="card-body p-2">
+                            <h1 class="fw-bold mb-1">4.5</h1>
+                            <div class="text-warning fs-5 mb-1">★★★★★</div>
+                            <p class="text-muted mb-0">1500+ Ratings</p>
+                        </div>
+                    </div>
+
+                    <!-- right review section -->
+                    <div class="col-md-9">
+                        <div class="card-body p-2">
+                            <p class="mb-2">
+                                "Best pizza in the city! The crust is perfectly crispy and the toppings are always
+                                fresh. My go-to spot every Friday night."
+                            </p>
+
+                            <p class="mb-2">
+                                <span class="text-dark">★★★★★</span>
+                                <span class="text-muted"> Marco T. · 11/15/24</span>
+                            </p>
+
+                            <p class="mb-2">
+                                "Great garlic knots and solid pizza. Service can be a bit slow during peak hours
+                                but the food makes up for it."
+                            </p>
+
+                            <p class="mb-3">
+                                <span class="text-dark">★★★★</span>
+                                <span class="text-muted"> Danielle K. · 01/08/25</span>
+                            </p>
+
+                            <a href="#" class="btn btn-light rounded-pill px-4 border">
+                                ↓ Show more
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-light py-4 mt-auto ">
+        <div class="container">
+            <div class="row align-items-center gy-3">
+                <div class="col-md-6">
+                    <h5 class="mb-1">FoodieVille</h5>
+                    <p class="mb-0 text-light-emphasis">
+                        Discover restaurants, explore menus, and enjoy great food all in one place.
+                    </p>
+                </div>
+
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light text-decoration-none me-3">Home</a>
+                    <a href="#" class="text-light text-decoration-none me-3">Restaurants</a>
+                    <a href="#" class="text-light text-decoration-none me-3">About</a>
+                    <a href="#" class="text-light text-decoration-none">Contact</a>
+                </div>
+            </div>
+
+            <hr class="border-secondary my-3">
+
+            <div class="text-center">
+                <small class="text-light-emphasis">&copy; 2026 FoodieVille. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="js/restaurant1.js"></script>
+</body>
+
+</html>

@@ -66,6 +66,17 @@ body {
     color: white;
 }
 
+.checkout-totals {
+    background-color: #f8f9fa !important;
+    color: #2b2b2b !important;
+    border: 1px solid #dee2e6 !important;
+}
+
+.checkout-totals:hover {
+    background-color: #f8f9fa !important;
+    color: #2b2b2b !important;
+}
+
 .list-group-item.active {
     background-color: #f57421;
     color: white;
