@@ -50,8 +50,12 @@ body {
     color: white
 }
 
+.menu-section-row {
+    height: 420px;
+}
+
 .list-scroll-section {
-    height: 170px;
+    height: 100%;
     overflow-y: auto;
 }
 

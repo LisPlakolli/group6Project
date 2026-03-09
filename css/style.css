@@ -61,7 +61,8 @@
     border: none;
 }
 
-html, body {
+html,
+body {
     min-height: 100%;
 }
 
@@ -77,4 +78,3 @@ body {
     object-fit: contain;
     border-radius: 50%;
 }
-
