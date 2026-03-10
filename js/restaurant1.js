@@ -47,5 +47,5 @@ function checkoutRestaurant() {
     }
     console.log(menu_list);
     localStorage.setItem('menu_items', JSON.stringify(menu_list));
-    // window.location.href = 'checkoutRest1.html';
+    window.location.href = 'checkoutRest1.html';
 }
