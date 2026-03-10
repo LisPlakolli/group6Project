@@ -1,29 +1,32 @@
 .welcome {
     font-family: cursive;
-    background-color: rgba(255, 0, 0, 0.25);
     padding: 80px 20px;
     text-align: center;
 }
 
 .welcome-box {
-    max-width: 700px;
+    max-width: 750px;
     margin: 0 auto;
-    padding: 30px 40px;
-    background-color: rgba(214, 155, 155, 135);
-    border-radius: 20px;
-    backdrop-filter: blur(6px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    padding: 35px 50px;
+    background-color: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 47px;
+    backdrop-filter: blur(10px);
 }
 
 .welcome-box h1 {
     margin-bottom: 12px;
     color: #1f1f1f;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 .welcome-box p {
     margin-bottom: 0;
-    color: #222;
+    color: #333;
     font-weight: 500;
+    font-size: 1.2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
 }
 
 .card-img-top {
@@ -77,4 +80,8 @@ body {
     height: 55px;
     object-fit: contain;
     border-radius: 50%;
+}
+
+.bg-body-tertiary {
+    background-color: #e9dad1 !important;
 }
