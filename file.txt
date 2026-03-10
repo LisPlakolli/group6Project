@@ -1,0 +1,4 @@
+if
+!cat copy.txt ||
+
+fi
