@@ -64,6 +64,27 @@
     border: none;
 }
 
+#restaurantCarousel .carousel-control-prev,
+#restaurantCarousel .carousel-control-next {
+    width: auto;
+}
+
+#restaurantCarousel .carousel-control-prev {
+    left: -100px;
+}
+
+#restaurantCarousel .carousel-control-next {
+    right: -100px;
+}
+
+#restaurantCarousel .carousel-control-prev-icon,
+#restaurantCarousel .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 50%;
+    padding: 28px;
+    background-size: 55% 55%;
+}
+
 html,
 body {
     min-height: 100%;
