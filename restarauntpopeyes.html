@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Popeyes Louisiana Kitchen</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/restaurant1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<div class="container">
+
+<img src="img/logo.png" alt="FoodieVille Logo" class="nav-logo">
+
+<a class="navbar-brand fw-bold" href="index.html">
+<span class="text-primary">Foodie</span><span class="text-dark">Ville</span>
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+data-bs-target="#navbarSupportedContent">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+<li class="nav-item">
+<a class="nav-link active" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="aboutus.html">About Us</a>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+More
+</a>
+
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="contact.html">Contact</a></li>
+<li><a class="dropdown-item" href="#">Orders</a></li>
+</ul>
+
+</li>
+
+</ul>
+</div>
+</div>
+</nav>
+
+
+<!-- HERO -->
+<section>
+
+<div class="container-fluid p-0">
+<div class="overflow-hidden" style="height:260px;">
+<img src="img/popeyesbanner.png"
+alt="Popeyes"
+class="w-100 h-100"
+style="object-fit:cover;">
+</div>
+</div>
+
+
+<div class="container">
+<div class="row gap-4 restaurant-layout">
+
+<!-- LEFT COLUMN -->
+<div class="col-md-7">
+
+<h1 class="mb-0 mt-3">Popeyes Louisiana Kitchen</h1>
+
+<p>240 W 40th St, New York, NY 10018</p>
+
+<p>
+Louisiana-inspired fast-food chain known for its crispy fried chicken,
+chicken sandwiches, Cajun fries, and bold southern flavors. Popeyes is
+famous for its crunchy batter, buttery biscuits, and signature spicy chicken.
+</p>
+
+
+<!-- MENU -->
+<div class="row py-4">
+
+<div class="col-4 d-none d-md-block">
+
+<div id="list-example" class="list-group">
+
+<a class="list-group-item list-group-item-action" href="#list-item-1">
+Chicken Sandwich
+</a>
+
+<a class="list-group-item list-group-item-action" href="#list-item-2">
+Spicy Chicken Sandwich
+</a>
+
+<a class="list-group-item list-group-item-action" href="#list-item-3">
+3pc Chicken Tenders
+</a>
+
+<a class="list-group-item list-group-item-action" href="#list-item-4">
+Cajun Fries
+</a>
+
+<a class="list-group-item list-group-item-action" href="#list-item-5">
+Chicken Biscuit
+</a>
+
+<a class="list-group-item list-group-item-action" href="#list-item-6">
+Popcorn Shrimp
+</a>
+
+<a class="list-group-item list-group-item-action" href="#list-item-7">
+Coca-Cola
+</a>
+
+<a class="list-group-item list-group-item-action" href="#list-item-8">
+Sweet Tea
+</a>
+
+</div>
+</div>
+
+
+<div class="col-12 col-md-8">
+
+<div data-bs-spy="scroll"
+data-bs-target="#list-example"
+data-bs-smooth-scroll="true"
+class="scrollspy-example list-scroll-section"
+style="height:520px; overflow-y:auto;"
+tabindex="0">
+<!-- Chicken Sandwich -->
+<div id="list-item-1">
+<div class="border rounded-3 p-3">
+<div class="d-flex align-items-center gap-3">
+
+<div class="img-container">
+<img class="menu-item-img" src="img/popeyes-sandwich.webp">
+</div>
+
+<div class="flex-grow-1">
+<h6 class="mb-1">Chicken Sandwich</h6>
+<p class="mb-0 text-muted">$6.49</p>
+</div>
+
+<button class="btn btn-primary rounded-5 plus-btn ms-auto"
+data-bs-toggle="modal"
+data-bs-target="#menuModal">
+<i class="bi bi-plus"></i>
+</button>
+
+</div>
+</div>
+</div>
+
+
+<!-- Spicy Sandwich -->
+<div id="list-item-2">
+<div class="border rounded-3 p-3">
+<div class="d-flex align-items-center gap-3">
+
+<div class="img-container">
+<img class="menu-item-img" src="img/popeyes-spicy.jpg">
+</div>
+
+<div class="flex-grow-1">
+<h6 class="mb-1">Spicy Chicken Sandwich</h6>
+<p class="mb-0 text-muted">$6.79</p>
+</div>
+
+<button class="btn btn-primary rounded-5 plus-btn ms-auto"
+data-bs-toggle="modal"
+data-bs-target="#menuModal">
+<i class="bi bi-plus"></i>
+</button>
+
+</div>
+</div>
+</div>
+
+
+<!-- Tenders -->
+<div id="list-item-3">
+<div class="border rounded-3 p-3">
+<div class="d-flex align-items-center gap-3">
+
+<div class="img-container">
+<img class="menu-item-img" src="img/popeyes-tenders.jpg">
+</div>
+
+<div class="flex-grow-1">
+<h6 class="mb-1">3pc Chicken Tenders</h6>
+<p class="mb-0 text-muted">$7.99</p>
+</div>
+
+<button class="btn btn-primary rounded-5 plus-btn ms-auto"
+data-bs-toggle="modal"
+data-bs-target="#menuModal">
+<i class="bi bi-plus"></i>
+</button>
+
+</div>
+</div>
+</div>
+
+
+<!-- Cajun Fries -->
+<div id="list-item-4">
+<div class="border rounded-3 p-3">
+<div class="d-flex align-items-center gap-3">
+
+<div class="img-container">
+<img class="menu-item-img" src="img/cajunfries.jpg">
+</div>
+
+<div class="flex-grow-1">
+<h6 class="mb-1">Cajun Fries</h6>
+<p class="mb-0 text-muted">$3.49</p>
+</div>
+
+<button class="btn btn-primary rounded-5 plus-btn ms-auto"
+data-bs-toggle="modal"
+data-bs-target="#menuModal">
+<i class="bi bi-plus"></i>
+</button>
+
+</div>
+</div>
+</div>
+
+
+<!-- Biscuit -->
+<div id="list-item-5">
+<div class="border rounded-3 p-3">
+<div class="d-flex align-items-center gap-3">
+
+<div class="img-container">
+<img class="menu-item-img" src="img/biscuit.jpg">
+</div>
+
+<div class="flex-grow-1">
+<h6 class="mb-1">Chicken Biscuit</h6>
+<p class="mb-0 text-muted">$4.49</p>
+</div>
+
+<button class="btn btn-primary rounded-5 plus-btn ms-auto"
+data-bs-toggle="modal"
+data-bs-target="#menuModal">
+<i class="bi bi-plus"></i>
+</button>
+
+</div>
+</div>
+</div>
+
+
+<!-- Shrimp -->
+<div id="list-item-6">
+<div class="border rounded-3 p-3">
+<div class="d-flex align-items-center gap-3">
+
+<div class="img-container">
+<img class="menu-item-img" src="img/popcornshrimp.jpg">
+</div>
+
+<div class="flex-grow-1">
+<h6 class="mb-1">Popcorn Shrimp</h6>
+<p class="mb-0 text-muted">$6.99</p>
+</div>
+
+<button class="btn btn-primary rounded-5 plus-btn ms-auto"
+data-bs-toggle="modal"
+data-bs-target="#menuModal">
+<i class="bi bi-plus"></i>
+</button>
+
+</div>
+</div>
+</div>
+
+
+<!-- Drink -->
+<div id="list-item-7">
+<div class="border rounded-3 p-3">
+<div class="d-flex align-items-center gap-3">
+
+<div class="img-container">
+<img class="menu-item-img" src="img/cocacola.jpg">
+</div>
+
+<div class="flex-grow-1">
+<h6 class="mb-1">Coca-Cola</h6>
+<p class="mb-0 text-muted">$2.49</p>
+</div>
+
+<button class="btn btn-primary rounded-5 plus-btn ms-auto"
+data-bs-toggle="modal"
+data-bs-target="#menuModal">
+<i class="bi bi-plus"></i>
+</button>
+
+</div>
+</div>
+</div>
+
+
+<!-- Sweet Tea -->
+<div id="list-item-8" class="mb-5">
+  <div class="border rounded-3 p-3">
+<div class="d-flex align-items-center gap-3">
+
+<div class="img-container">
+<img class="menu-item-img" src="img/sweettea.jpeg">
+</div>
+
+<div class="flex-grow-1">
+<h6 class="mb-1">Sweet Tea</h6>
+<p class="mb-0 text-muted">$2.49</p>
+</div>
+
+<button class="btn btn-primary rounded-5 plus-btn ms-auto"
+data-bs-toggle="modal"
+data-bs-target="#menuModal">
+<i class="bi bi-plus"></i>
+</button>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+
+<!-- RIGHT COLUMN -->
+<div class="col-md-3 pt-4 flex-fill text-end">
+<button class="btn btn-primary w-100"
+data-bs-toggle="modal"
+data-bs-target="#menuModal">
+Order Now
+</button>
+
+<div class="map-container py-4 overflow-hidden w-100"
+style="height:350px;">
+
+<iframe class="w-100 h-100 border-0 rounded-3"
+src="https://www.google.com/maps?q=240+W+40th+St+New+York+NY+10018&output=embed"
+loading="lazy">
+</iframe>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</section>
+
+<!-- REVIEWS -->
+
+<section class="container mb-3">
+
+<div class="col-12 mt-4">
+
+<div class="card p-3 rounded-4">
+
+<div class="row g-3 align-items-start">
+
+<!-- RATING -->
+<div class="col-md-3 text-md-center">
+
+<div class="card-body p-2">
+
+<h1 class="fw-bold mb-1">3.8</h1>
+
+<div class="text-warning fs-5 mb-1">★★★★☆</div>
+
+<p class="text-muted mb-0">6000+ Reviews</p>
+
+</div>
+
+</div>
+
+<!-- REVIEW TEXT -->
+<div class="col-md-9">
+
+<div class="card-body p-2">
+
+<p class="mb-2">
+"The chicken sandwich here is always crispy and juicy. 
+Definitely one of the best fast food chicken sandwiches."
+</p>
+
+<p class="mb-2">
+<span class="text-dark">★★★★★</span>
+<span class="text-muted"> Michael R. · 11/14/24</span>
+</p>
+
+<p class="mb-2">
+"Fast service and great Cajun fries. The spicy chicken 
+sandwich has the perfect amount of heat."
+</p>
+
+<p class="mb-3">
+<span class="text-dark">★★★★</span>
+<span class="text-muted"> Sarah T. · 09/02/24</span>
+</p>
+
+<a href="#" class="btn btn-light rounded-pill px-4 border">
+↓ Show more
+</a>
+
+</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+</script>
+
+</body>
+</html>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
