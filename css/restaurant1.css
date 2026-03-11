@@ -34,10 +34,12 @@ body {
 
 .btn-primary {
     background-color: #f57421;
+    border-color: #e89a27;
 }
 
 .btn-primary:hover {
     background-color: #eb9158;
+    border-color: #e89a27;
 }
 
 .btn-outline-primary {
@@ -47,7 +49,7 @@ body {
 
 .btn-outline-primary:hover {
     background-color: #eb9158;
-    color: white
+    color: white;
 }
 
 .menu-section-row {
@@ -92,7 +94,7 @@ body {
         flex-direction: column;
     }
 
-    .restaurant-layout>div {
+    .restaurant-layout > div {
         width: 100%;
         max-width: 100%;
         flex: 0 0 100%;
@@ -104,10 +106,9 @@ body {
     }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
     .list-scroll-section {
         height: 100%;
-
     }
 
     .map-container {
