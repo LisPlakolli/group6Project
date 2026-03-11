@@ -19,9 +19,8 @@
 
 <img src="img/logo.png" alt="FoodieVille Logo" class="nav-logo">
 
-<a class="navbar-brand" href="index.html">
-<span class="text-primary fw-bold">Foodie</span>
-<span class="fw-bold">Ville</span>
+<a class="navbar-brand fw-bold" href="index.html">
+<span class="text-primary">Foodie</span><span class="text-dark">Ville</span>
 </a>
 
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -34,11 +33,11 @@ data-bs-target="#navbarSupportedContent">
 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
 <li class="nav-item">
-<a class="nav-link active" href="#">Home</a>
+<a class="nav-link active" href="index.html">Home</a>
 </li>
 
 <li class="nav-item">
-<a class="nav-link" href="#">About Us</a>
+<a class="nav-link" href="aboutus.html">About Us</a>
 </li>
 
 <li class="nav-item dropdown">
@@ -47,7 +46,7 @@ More
 </a>
 
 <ul class="dropdown-menu">
-<li><a class="dropdown-item" href="#">Contact</a></li>
+<li><a class="dropdown-item" href="contact.html">Contact</a></li>
 <li><a class="dropdown-item" href="#">Orders</a></li>
 </ul>
 
@@ -64,7 +63,7 @@ More
 
 <div class="container-fluid p-0">
 <div class="overflow-hidden" style="height:260px;">
-<img src="img/restback.jpg"
+<img src="img/shanghai21inside.jpg"
 alt="Shanghai 21"
 class="w-100 h-100"
 style="object-fit:cover;">
@@ -109,6 +108,21 @@ Beef & Broccoli
 Vegetable Fried Rice
 </a>
 
+<a class="list-group-item list-group-item-action" href="#list-item-4">
+Pork Dumplings
+</a>
+
+<a class="list-group-item list-group-item-action" href="#list-item-5">
+Sweet & Sour Chicken
+</a>
+
+<a class="list-group-item list-group-item-action" href="#list-item-6">
+Kung Pao Chicken
+</a>
+
+<a class="list-group-item list-group-item-action" href="#list-item-7">
+Coca-Cola
+</a>
 </div>
 </div>
 
@@ -118,7 +132,9 @@ Vegetable Fried Rice
 <div data-bs-spy="scroll"
 data-bs-target="#list-example"
 data-bs-smooth-scroll="true"
-class="scrollspy-example list-scroll-section">
+class="scrollspy-example list-scroll-section"
+style="height:520px; overflow-y:auto;"
+tabindex="0">
 
 
 <!-- ITEM 1 -->
@@ -201,6 +217,104 @@ data-bs-target="#menuModal">
 </div>
 </div>
 
+<div id="list-item-4">
+
+<div class="border rounded-3 p-3">
+
+<div class="d-flex align-items-center gap-3">
+
+<div class="img-container">
+<img class="menu-item-img" src="img/porkdumplings.jpg">
+</div>
+
+<div class="flex-grow-1">
+<h6 class="mb-1">Pork Dumplings</h6>
+<p class="mb-0 text-muted">$8.99</p>
+</div>
+
+<button class="btn btn-primary rounded-5 plus-btn ms-auto"
+data-bs-toggle="modal"
+data-bs-target="#menuModal">
+<i class="bi bi-plus"></i>
+</button>
+
+</div>
+</div>
+</div>
+
+<div id="list-item-5">
+
+<div class="border rounded-3 p-3">
+
+<div class="d-flex align-items-center gap-3">
+
+<div class="img-container">
+<img class="menu-item-img" src="img/sweetandsourchicken.webp">
+</div>
+
+<div class="flex-grow-1">
+<h6 class="mb-1">Sweet & Sour Chicken</h6>
+<p class="mb-0 text-muted">$12.99</p>
+</div>
+
+<button class="btn btn-primary rounded-5 plus-btn ms-auto"
+data-bs-toggle="modal"
+data-bs-target="#menuModal">
+<i class="bi bi-plus"></i>
+</button>
+
+</div>
+</div>
+</div>
+<div id="list-item-6">
+
+<div class="border rounded-3 p-3">
+
+<div class="d-flex align-items-center gap-3">
+
+<div class="img-container">
+<img class="menu-item-img" src="img/kungpaochicken.jpg">
+</div>
+
+<div class="flex-grow-1">
+<h6 class="mb-1">Kung Pao Chicken</h6>
+<p class="mb-0 text-muted">$13.99</p>
+</div>
+
+<button class="btn btn-primary rounded-5 plus-btn ms-auto"
+data-bs-toggle="modal"
+data-bs-target="#menuModal">
+<i class="bi bi-plus"></i>
+</button>
+
+</div>
+</div>
+</div>
+
+<div id="list-item-7" class="mb-5">
+<div class="border rounded-3 p-3">
+
+<div class="d-flex align-items-center gap-3">
+
+<div class="img-container">
+<img class="menu-item-img" src="img/cocacola.jpg">
+</div>
+
+<div class="flex-grow-1">
+<h6 class="mb-1">Coca-Cola</h6>
+<p class="mb-0 text-muted">$2.50</p>
+</div>
+
+<button class="btn btn-primary rounded-5 plus-btn ms-auto"
+data-bs-toggle="modal"
+data-bs-target="#menuModal">
+<i class="bi bi-plus"></i>
+</button>
+
+</div>
+</div>
+</div>
+
 </div>
 </div>
 </div>
@@ -209,8 +323,7 @@ data-bs-target="#menuModal">
 
 
 <!-- RIGHT COLUMN -->
-<div class="col-md-3 pt-4 text-end">
-
+<div class="col-md-3 pt-4 flex-fill text-end">
 <button class="btn btn-primary w-100"
 data-bs-toggle="modal"
 data-bs-target="#menuModal">
@@ -338,6 +451,69 @@ loading="lazy">
 
 </div>
 
+<div class="border rounded-3 p-2">
+<div class="d-flex align-items-center gap-3">
+<div class="img-container flex-shrink-0">
+<img class="menu-item-img" src="img/porkdumplings.jpg">
+</div>
+<div class="flex-grow-1">
+<h6 class="mb-1">Pork Dumplings</h6>
+</div>
+<div class="d-flex align-items-center gap-2">
+<button class="btn btn-outline-primary btn-sm minus-btn">-</button>
+<span class="count">0</span>
+<button class="btn btn-outline-primary btn-sm plus-btn">+</button>
+</div>
+</div>
+</div>
+<div class="border rounded-3 p-2">
+<div class="d-flex align-items-center gap-3">
+<div class="img-container flex-shrink-0">
+<img class="menu-item-img" src="img/sweetandsourchicken.webp">
+</div>
+<div class="flex-grow-1">
+<h6 class="mb-1">Sweet & Sour Chicken</h6>
+</div>
+<div class="d-flex align-items-center gap-2">
+<button class="btn btn-outline-primary btn-sm minus-btn">-</button>
+<span class="count">0</span>
+<button class="btn btn-outline-primary btn-sm plus-btn">+</button>
+</div>
+</div>
+</div>
+
+<div class="border rounded-3 p-2">
+<div class="d-flex align-items-center gap-3">
+<div class="img-container flex-shrink-0">
+<img class="menu-item-img" src="img/kungpaochicken.jpg">
+</div>
+<div class="flex-grow-1">
+<h6 class="mb-1">Kung Pao Chicken</h6>
+</div>
+<div class="d-flex align-items-center gap-2">
+<button class="btn btn-outline-primary btn-sm minus-btn">-</button>
+<span class="count">0</span>
+<button class="btn btn-outline-primary btn-sm plus-btn">+</button>
+</div>
+</div>
+</div>
+
+<div class="border rounded-3 p-2">
+<div class="d-flex align-items-center gap-3">
+<div class="img-container flex-shrink-0">
+<img class="menu-item-img" src="img/cocacola.jpg">
+</div>
+<div class="flex-grow-1">
+<h6 class="mb-1">Coca-Cola</h6>
+</div>
+<div class="d-flex align-items-center gap-2">
+<button class="btn btn-outline-primary btn-sm minus-btn">-</button>
+<span class="count">0</span>
+<button class="btn btn-outline-primary btn-sm plus-btn">+</button>
+</div>
+</div>
+</div>
+
 </div>
 
 </div>
@@ -380,7 +556,7 @@ Checkout
 
 <div class="text-warning fs-5 mb-1">★★★★★</div>
 
-<p class="text-muted mb-0">3.4K Reviews</p>
+<p class="text-muted mb-0">3000+ Reviews</p>
 
 </div>
 
