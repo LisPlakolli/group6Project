@@ -25,10 +25,11 @@ function checkoutRestaurant() {
     let hasItems = false;
     document.querySelectorAll('.quantity-control').forEach((control, index) => {
         const menuItemName =
-            control.querySelector('.menu-item-name').textContent;
+            control.querySelector('.menu-item-name').textContent.trim();
         const menuItemPrice = control
             .querySelector('.menu-item-price')
-            .textContent.substring(1);
+            .textContent.trim()
+            .substring(1);
         const countOfElement = control.querySelector('.count').textContent;
         if (Number(countOfElement) > 0) {
             hasItems = true;
