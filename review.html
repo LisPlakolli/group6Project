@@ -57,60 +57,43 @@ background:#e66900;
 <body class="d-flex flex-column min-vh-100">
 
 <!-- navbar start -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-<div class="container">
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <img src="img/logo.png" alt="FoodieVille Logo" class="nav-logo" />
+            <a class="navbar-brand" href="index.html">
+                <span class="text-primary fw-bold">Foodie</span><span class="fw-bold">Ville</span>
+            </a>
 
-<img src="img/logo.png" alt="FoodieVille Logo" class="nav-logo" />
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-<a class="navbar-brand" href="index.html">
-<span class="text-primary fw-bold">Foodie</span><span class="fw-bold">Ville</span>
-</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="checkoutRest1.html">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="join-us.html">Join</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="aboutus.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
 
-<button class="navbar-toggler" type="button"
-data-bs-toggle="collapse"
-data-bs-target="#navbarSupportedContent">
-
-<span class="navbar-toggler-icon"></span>
-
-</button>
-
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-<li class="nav-item">
-<a class="nav-link" href="index.html">Home</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="checkoutRest1.html">Orders</a>
-</li>
-
-<li class="nav-item dropdown">
-
-<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-More
-</a>
-
-<ul class="dropdown-menu">
-
-<li>
-<a class="dropdown-item" href="aboutus.html">About Us</a>
-</li>
-
-<li>
-<a class="dropdown-item" href="contact.html">Contact</a>
-</li>
-
-</ul>
-
-</li>
-
-</ul>
-
-</div>
-</div>
-</nav>
+                <a class="btn btn-primary" href="signUp.html">Sign Up</a>
+            </div>
+        </div>
+    </nav> 
 
 
 <!-- HERO -->
@@ -197,12 +180,25 @@ Your feedback helps FoodieVille improve!
 
 </div>
 
+<!-- Written Review -->
+
+<div class="mb-4">
+
+<h5 class="mb-3 text-center">Write your review</h5>
+
+<textarea 
+class="form-control" 
+rows="4" 
+placeholder="Tell us what you liked or what we can improve...">
+</textarea>
+
+</div>
 
 <!-- Submit -->
 
 <div class="text-center mt-4">
 
-<button class="btn submit-btn text-white">
+<button class="btn submit-btn text-white" onclick="submitReview()">
 Submit Review
 </button>
 
@@ -277,8 +273,22 @@ group[i].classList.add("selected");
 
 }
 
-</script>
+function submitReview(){
 
+confetti({
+particleCount: 200,
+spread: 120,
+origin: { y: 0.6 }
+});
+
+setTimeout(() => {
+alert("🎉 Thank you for your review! We hope to see you again 😀😀!");
+}, 300);
+
+}
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
