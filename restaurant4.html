@@ -1,22 +1,16 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Restaurant</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="css/restaurant1.css" />
 
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-        />
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/restaurant1.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+</head>
 
 
 
@@ -56,824 +50,509 @@
 
                 <a class="btn btn-primary" href="signUp.html">Sign Up</a>
             </div>
-        </nav>
+    </nav>
 
-        <!-- restaurant hero section -->
-        <section>
-            <div class="container-fluid p-0">
-                <div class="overflow-hidden" style="height: 260px">
-                    <img
-                        src="./img/restaurant4/shrimpTempuraRoll.jpg"
-                        alt="Restaurant food"
-                        class="w-100 h-100"
-                        style="object-fit: cover"
-                    />
-                </div>
+    <!-- restaurant hero section -->
+    <section>
+        <div class="container-fluid p-0">
+            <div class="overflow-hidden" style="height: 260px">
+                <img src="./img/restaurant4/shrimpTempuraRoll.jpg" alt="Restaurant food" class="w-100 h-100"
+                    style="object-fit: cover" />
             </div>
-            <!-- restaurant info-->
-            <div class="container">
-                <div class="row gap-4 restaurant-layout">
-                    <div class="col-md-7 h-100">
-                        <div>
-                            <h1 class="mb-0 mt-3">Yoi Sushi</h1>
-                            <p class="text-align-justify">
-                                133-22 39th Ave, Flushing, NY 11354
-                            </p>
-                            Yoi Sushi is a modern Japanese restaurant
-                            specializing in fresh sushi, light soups, and simple
-                            seafood dishes. Its clean presentation and calm
-                            atmosphere make it a pleasant place for guests
-                            seeking fresh flavors, balanced meals, and a more
-                            refined casual dining experience.
-                        </div>
-                        <div class="row py-4 menu-section-row">
-                            <div class="col-4 d-none d-md-block">
-                                <div id="list-example" class="list-group">
-                                    <a
-                                        class="list-group-item list-group-item-action"
-                                        href="#list-item-1"
-                                        >California Roll</a
-                                    >
-                                    <a
-                                        class="list-group-item list-group-item-action"
-                                        href="#list-item-2"
-                                        >Spicy Tuna Roll</a
-                                    >
-                                    <a
-                                        class="list-group-item list-group-item-action"
-                                        href="#list-item-3"
-                                        >Salmon Nigiri</a
-                                    >
-                                    <a
-                                        class="list-group-item list-group-item-action"
-                                        href="#list-item-4"
-                                        >Shrimp Tempura Roll</a
-                                    >
-                                    <a
-                                        class="list-group-item list-group-item-action"
-                                        href="#list-item-5"
-                                        >Miso Soup</a
-                                    >
-                                    <a
-                                        class="list-group-item list-group-item-action"
-                                        href="#list-item-6"
-                                        >Edamame</a
-                                    >
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-8 mh-100">
-                                <div
-                                    data-bs-spy="scroll"
-                                    data-bs-target="#list-example"
-                                    data-bs-smooth-scroll="true"
-                                    class="scrollspy-example list-scroll-section"
-                                    tabindex="0"
-                                >
-                                    <div id="list-item-1">
-                                        <div class="border rounded-3 p-3">
-                                            <div
-                                                class="d-flex align-items-center gap-3"
-                                            >
-                                                <div
-                                                    class="img-container object-fit"
-                                                >
-                                                    <img
-                                                        class="menu-item-img"
-                                                        src="img/restaurant4/californiaRoll.jpg"
-                                                        alt=""
-                                                    />
-                                                </div>
-                                                <div class="flex-grow-1">
-                                                    <h6 class="mb-1">
-                                                        California Roll
-                                                    </h6>
-                                                    <p class="mb-0 text-muted">
-                                                        $8.99
-                                                    </p>
-                                                </div>
-                                                <button
-                                                    type="button"
-                                                    class="btn btn-primary btn-md rounded-5 plus-btn ms-auto"
-                                                    data-bs-toggle="modal"
-                                                    data-bs-target="#menuModal"
-                                                >
-                                                    <i class="bi bi-plus"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="list-item-2">
-                                        <div class="border rounded-3 p-3">
-                                            <div
-                                                class="d-flex align-items-center gap-3"
-                                            >
-                                                <div
-                                                    class="img-container object-fit"
-                                                >
-                                                    <img
-                                                        class="menu-item-img"
-                                                        src="img/restaurant4/spicyTunaRoll.jpg"
-                                                        alt=""
-                                                    />
-                                                </div>
-                                                <div class="flex-grow-1">
-                                                    <h6 class="mb-1">
-                                                        Spicy Tuna Roll
-                                                    </h6>
-                                                    <p class="mb-0 text-muted">
-                                                        $10.99
-                                                    </p>
-                                                </div>
-                                                <button
-                                                    type="button"
-                                                    class="btn btn-primary btn-md rounded-5 plus-btn ms-auto"
-                                                    data-bs-toggle="modal"
-                                                    data-bs-target="#menuModal"
-                                                >
-                                                    <i class="bi bi-plus"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="list-item-3">
-                                        <div class="border rounded-3 p-3">
-                                            <div
-                                                class="d-flex align-items-center gap-3"
-                                            >
-                                                <div
-                                                    class="img-container object-fit"
-                                                >
-                                                    <img
-                                                        class="menu-item-img"
-                                                        src="img/restaurant4/SalmonNigiri.jpg"
-                                                        alt=""
-                                                    />
-                                                </div>
-                                                <div class="flex-grow-1">
-                                                    <h6 class="mb-1">
-                                                        Salmon Nigiri
-                                                    </h6>
-                                                    <p class="mb-0 text-muted">
-                                                        $7.99
-                                                    </p>
-                                                </div>
-                                                <button
-                                                    type="button"
-                                                    class="btn btn-primary btn-md rounded-5 plus-btn ms-auto"
-                                                    data-bs-toggle="modal"
-                                                    data-bs-target="#menuModal"
-                                                >
-                                                    <i class="bi bi-plus"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="list-item-4">
-                                        <div class="border rounded-3 p-3">
-                                            <div
-                                                class="d-flex align-items-center gap-3"
-                                            >
-                                                <div
-                                                    class="img-container object-fit"
-                                                >
-                                                    <img
-                                                        class="menu-item-img"
-                                                        src="img/restaurant4/shrimpTempuraRoll.jpg"
-                                                        alt=""
-                                                    />
-                                                </div>
-                                                <div class="flex-grow-1">
-                                                    <h6 class="mb-1">
-                                                        Shrimp Tempura Roll
-                                                    </h6>
-                                                    <p class="mb-0 text-muted">
-                                                        $11.99
-                                                    </p>
-                                                </div>
-                                                <button
-                                                    type="button"
-                                                    class="btn btn-primary btn-md rounded-5 plus-btn ms-auto"
-                                                    data-bs-toggle="modal"
-                                                    data-bs-target="#menuModal"
-                                                >
-                                                    <i class="bi bi-plus"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="list-item-5">
-                                        <div class="border rounded-3 p-3">
-                                            <div
-                                                class="d-flex align-items-center gap-3"
-                                            >
-                                                <div
-                                                    class="img-container object-fit"
-                                                >
-                                                    <img
-                                                        class="menu-item-img"
-                                                        src="img/restaurant4/miso-soup.jpg"
-                                                        alt=""
-                                                    />
-                                                </div>
-                                                <div class="flex-grow-1">
-                                                    <h6 class="mb-1">
-                                                        Miso Soup
-                                                    </h6>
-                                                    <p class="mb-0 text-muted">
-                                                        $3.99
-                                                    </p>
-                                                </div>
-                                                <button
-                                                    type="button"
-                                                    class="btn btn-primary btn-md rounded-5 plus-btn ms-auto"
-                                                    data-bs-toggle="modal"
-                                                    data-bs-target="#menuModal"
-                                                >
-                                                    <i class="bi bi-plus"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="list-item-6">
-                                        <div class="border rounded-3 p-3">
-                                            <div
-                                                class="d-flex align-items-center gap-3"
-                                            >
-                                                <div
-                                                    class="img-container object-fit"
-                                                >
-                                                    <img
-                                                        class="menu-item-img"
-                                                        src="img/restaurant4/edamame.jpg"
-                                                        alt=""
-                                                    />
-                                                </div>
-                                                <div class="flex-grow-1">
-                                                    <h6 class="mb-1">
-                                                        Edamame
-                                                    </h6>
-                                                    <p class="mb-0 text-muted">
-                                                        $4.99
-                                                    </p>
-                                                </div>
-                                                <button
-                                                    type="button"
-                                                    class="btn btn-primary btn-md rounded-5 plus-btn ms-auto"
-                                                    data-bs-toggle="modal"
-                                                    data-bs-target="#menuModal"
-                                                >
-                                                    <i class="bi bi-plus"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- menu items -->
-
-                    <!-- Modal Section -->
-                    <div class="col-md-3 pt-4 flex-fill text-end">
-                        <!-- Button trigger modal -->
-                        <button
-                            type="button"
-                            class="btn btn-primary w-100"
-                            data-bs-toggle="modal"
-                            data-bs-target="#menuModal"
-                        >
-                            Order Now
-                        </button>
-                        <!-- Modal -->
-                        <div
-                            class="modal fade"
-                            id="menuModal"
-                            tabindex="-1"
-                            aria-labelledby="menuModalLabel"
-                            aria-hidden="true"
-                        >
-                            <div
-                                class="modal-dialog modal-l modal-dialog-scrollable"
-                            >
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1
-                                            class="modal-title fs-5"
-                                            id="menuModalLabel"
-                                        >
-                                            Menu
-                                        </h1>
-                                        <button
-                                            type="button"
-                                            class="btn-close"
-                                            data-bs-dismiss="modal"
-                                            aria-label="Close"
-                                        ></button>
-                                    </div>
-                                    <div class="modal-body text-start">
-                                        <form>
-                                            <div
-                                                class="d-flex flex-column gap-3"
-                                            >
-                                                <div
-                                                    class="border rounded-3 p-2"
-                                                >
-                                                    <div
-                                                        class="d-flex align-items-center gap-3 quantity-control"
-                                                    >
-                                                        <div
-                                                            class="img-container flex-shrink-0"
-                                                        >
-                                                            <img
-                                                                class="menu-item-img"
-                                                                src="img/restaurant4/californiaRoll.jpg"
-                                                                alt=""
-                                                            />
-                                                        </div>
-
-                                                        <div
-                                                            class="menu-item-info flex-grow-1"
-                                                        >
-                                                            <h6
-                                                                class="mb-1 menu-item-name"
-                                                            >
-                                                                California Roll
-                                                            </h6>
-                                                            <p
-                                                                class="mb-0 text-muted menu-item-price"
-                                                            >
-                                                                $8.99
-                                                            </p>
-                                                        </div>
-
-                                                        <div
-                                                            class="quantity-buttons d-flex align-items-center justify-content-end gap-2 flex-shrink-0"
-                                                        >
-                                                            <button
-                                                                type="button"
-                                                                class="btn btn-outline-primary btn-sm minus-btn"
-                                                            >
-                                                                <i
-                                                                    class="bi bi-dash"
-                                                                ></i>
-                                                            </button>
-                                                            <span
-                                                                class="fw-semibold count"
-                                                                >0</span
-                                                            >
-                                                            <button
-                                                                type="button"
-                                                                class="btn btn-outline-primary btn-sm plus-btn"
-                                                            >
-                                                                <i
-                                                                    class="bi bi-plus"
-                                                                ></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div
-                                                    class="border rounded-3 p-2"
-                                                >
-                                                    <div
-                                                        class="d-flex align-items-center gap-3 quantity-control"
-                                                    >
-                                                        <div
-                                                            class="img-container flex-shrink-0"
-                                                        >
-                                                            <img
-                                                                class="menu-item-img"
-                                                                src="img/restaurant4/spicyTunaRoll.jpg"
-                                                                alt=""
-                                                            />
-                                                        </div>
-
-                                                        <div
-                                                            class="menu-item-info flex-grow-1"
-                                                        >
-                                                            <h6
-                                                                class="mb-1 menu-item-name"
-                                                            >
-                                                                Spicy Tuna Roll
-                                                            </h6>
-                                                            <p
-                                                                class="mb-0 text-muted menu-item-price"
-                                                            >
-                                                                $10.99
-                                                            </p>
-                                                        </div>
-
-                                                        <div
-                                                            class="quantity-buttons d-flex align-items-center justify-content-end gap-2 flex-shrink-0"
-                                                        >
-                                                            <button
-                                                                type="button"
-                                                                class="btn btn-outline-primary btn-sm minus-btn"
-                                                            >
-                                                                <i
-                                                                    class="bi bi-dash"
-                                                                ></i>
-                                                            </button>
-                                                            <span
-                                                                class="fw-semibold count"
-                                                                >0</span
-                                                            >
-                                                            <button
-                                                                type="button"
-                                                                class="btn btn-outline-primary btn-sm plus-btn"
-                                                            >
-                                                                <i
-                                                                    class="bi bi-plus"
-                                                                ></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div
-                                                    class="border rounded-3 p-2"
-                                                >
-                                                    <div
-                                                        class="d-flex align-items-center gap-3 quantity-control"
-                                                    >
-                                                        <div
-                                                            class="img-container flex-shrink-0"
-                                                        >
-                                                            <img
-                                                                class="menu-item-img"
-                                                                src="img/restaurant4/SalmonNigiri.jpg"
-                                                                alt=""
-                                                            />
-                                                        </div>
-
-                                                        <div
-                                                            class="menu-item-info flex-grow-1"
-                                                        >
-                                                            <h6
-                                                                class="mb-1 menu-item-name"
-                                                            >
-                                                                Salmon Nigiri
-                                                            </h6>
-                                                            <p
-                                                                class="mb-0 text-muted menu-item-price"
-                                                            >
-                                                                $7.99
-                                                            </p>
-                                                        </div>
-
-                                                        <div
-                                                            class="quantity-buttons d-flex align-items-center justify-content-end gap-2 flex-shrink-0"
-                                                        >
-                                                            <button
-                                                                type="button"
-                                                                class="btn btn-outline-primary btn-sm minus-btn"
-                                                            >
-                                                                <i
-                                                                    class="bi bi-dash"
-                                                                ></i>
-                                                            </button>
-                                                            <span
-                                                                class="fw-semibold count"
-                                                                >0</span
-                                                            >
-                                                            <button
-                                                                type="button"
-                                                                class="btn btn-outline-primary btn-sm plus-btn"
-                                                            >
-                                                                <i
-                                                                    class="bi bi-plus"
-                                                                ></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div
-                                                    class="border rounded-3 p-2"
-                                                >
-                                                    <div
-                                                        class="d-flex align-items-center gap-3 quantity-control"
-                                                    >
-                                                        <div
-                                                            class="img-container flex-shrink-0"
-                                                        >
-                                                            <img
-                                                                class="menu-item-img"
-                                                                src="img/restaurant4/shrimpTempuraRoll.jpg"
-                                                                alt=""
-                                                            />
-                                                        </div>
-
-                                                        <div
-                                                            class="menu-item-info flex-grow-1"
-                                                        >
-                                                            <h6
-                                                                class="mb-1 menu-item-name"
-                                                            >
-                                                                Shrimp Tempura
-                                                                Roll
-                                                            </h6>
-                                                            <p
-                                                                class="mb-0 text-muted menu-item-price"
-                                                            >
-                                                                $11.99
-                                                            </p>
-                                                        </div>
-
-                                                        <div
-                                                            class="quantity-buttons d-flex align-items-center justify-content-end gap-2 flex-shrink-0"
-                                                        >
-                                                            <button
-                                                                type="button"
-                                                                class="btn btn-outline-primary btn-sm minus-btn"
-                                                            >
-                                                                <i
-                                                                    class="bi bi-dash"
-                                                                ></i>
-                                                            </button>
-                                                            <span
-                                                                class="fw-semibold count"
-                                                                >0</span
-                                                            >
-                                                            <button
-                                                                type="button"
-                                                                class="btn btn-outline-primary btn-sm plus-btn"
-                                                            >
-                                                                <i
-                                                                    class="bi bi-plus"
-                                                                ></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div
-                                                    class="border rounded-3 p-2"
-                                                >
-                                                    <div
-                                                        class="d-flex align-items-center gap-3 quantity-control"
-                                                    >
-                                                        <div
-                                                            class="img-container flex-shrink-0"
-                                                        >
-                                                            <img
-                                                                class="menu-item-img"
-                                                                src="img/restaurant4/miso-soup.jpg"
-                                                                alt=""
-                                                            />
-                                                        </div>
-
-                                                        <div
-                                                            class="menu-item-info flex-grow-1"
-                                                        >
-                                                            <h6
-                                                                class="mb-1 menu-item-name"
-                                                            >
-                                                                Miso Soup
-                                                            </h6>
-                                                            <p
-                                                                class="mb-0 text-muted menu-item-price"
-                                                            >
-                                                                $3.99
-                                                            </p>
-                                                        </div>
-
-                                                        <div
-                                                            class="quantity-buttons d-flex align-items-center justify-content-end gap-2 flex-shrink-0"
-                                                        >
-                                                            <button
-                                                                type="button"
-                                                                class="btn btn-outline-primary btn-sm minus-btn"
-                                                            >
-                                                                <i
-                                                                    class="bi bi-dash"
-                                                                ></i>
-                                                            </button>
-                                                            <span
-                                                                class="fw-semibold count"
-                                                                >0</span
-                                                            >
-                                                            <button
-                                                                type="button"
-                                                                class="btn btn-outline-primary btn-sm plus-btn"
-                                                            >
-                                                                <i
-                                                                    class="bi bi-plus"
-                                                                ></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div
-                                                    class="border rounded-3 p-2"
-                                                >
-                                                    <div
-                                                        class="d-flex align-items-center gap-3 quantity-control"
-                                                    >
-                                                        <div
-                                                            class="img-container flex-shrink-0"
-                                                        >
-                                                            <img
-                                                                class="menu-item-img"
-                                                                src="img/restaurant4/edamame.jpg"
-                                                                alt=""
-                                                            />
-                                                        </div>
-
-                                                        <div
-                                                            class="menu-item-info flex-grow-1"
-                                                        >
-                                                            <h6
-                                                                class="mb-1 menu-item-name"
-                                                            >
-                                                                Edamame
-                                                            </h6>
-                                                            <p
-                                                                class="mb-0 text-muted menu-item-price"
-                                                            >
-                                                                $4.99
-                                                            </p>
-                                                        </div>
-
-                                                        <div
-                                                            class="quantity-buttons d-flex align-items-center justify-content-end gap-2 flex-shrink-0"
-                                                        >
-                                                            <button
-                                                                type="button"
-                                                                class="btn btn-outline-primary btn-sm minus-btn"
-                                                            >
-                                                                <i
-                                                                    class="bi bi-dash"
-                                                                ></i>
-                                                            </button>
-                                                            <span
-                                                                class="fw-semibold count"
-                                                                >0</span
-                                                            >
-                                                            <button
-                                                                type="button"
-                                                                class="btn btn-outline-primary btn-sm plus-btn"
-                                                            >
-                                                                <i
-                                                                    class="bi bi-plus"
-                                                                ></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="pt-2">
-                                                    <label
-                                                        for="specialInstructions"
-                                                        class="form-label"
-                                                        >Extra Directions</label
-                                                    >
-                                                    <textarea
-                                                        class="form-control"
-                                                        id="specialInstructions"
-                                                        rows="3"
-                                                        placeholder="Example: No pickles, extra dressing, sauce on the side"
-                                                    ></textarea>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button
-                                            type="button"
-                                            class="btn btn-secondary"
-                                            data-bs-dismiss="modal"
-                                        >
-                                            Cancel
-                                        </button>
-                                        <button
-                                            type="button"
-                                            class="btn btn-primary"
-                                            onclick="checkoutRestaurant()"
-                                        >
-                                            Checkout
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="map-container py-4 overflow-hidden w-100"
-                            style="height: 350px"
-                        >
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.137520491938!2d-73.83622062416485!3d40.75899997138663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2600e850830b9%3A0xff68f22e69e8e096!2s133-22%2039th%20Ave%2C%20Flushing%2C%20NY%2011354!5e0!3m2!1sen!2sus!4v1773243279792!5m2!1sen!2sus"
-                                width="600"
-                                height="450"
-                                style="border: 0"
-                                allowfullscreen=""
-                                loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"
-                            ></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="container mb-3">
-            <!-- review section -->
-            <div class="col-12 mt-4">
-                <div class="card p-3 rounded-4">
-                    <div class="row g-3 align-items-start">
-                        <!-- left rating section -->
-                        <div class="col-md-3 text-md-center">
-                            <div class="card-body p-2">
-                                <h1 class="fw-bold mb-1">4.5</h1>
-                                <div class="text-warning fs-5 mb-1">★★★★★</div>
-                                <p class="text-muted mb-0">1500+ Ratings</p>
-                            </div>
-                        </div>
-
-                        <!-- right review section -->
-                        <div class="col-md-9">
-                            <div class="card-body p-2">
-                                <p class="mb-2">
-                                    "Best pizza in the city! The crust is
-                                    perfectly crispy and the toppings are always
-                                    fresh. My go-to spot every Friday night."
-                                </p>
-
-                                <p class="mb-2">
-                                    <span class="text-dark">★★★★★</span>
-                                    <span class="text-muted">
-                                        Marco T. · 11/15/24</span
-                                    >
-                                </p>
-
-                                <p class="mb-2">
-                                    "Great garlic knots and solid pizza. Service
-                                    can be a bit slow during peak hours but the
-                                    food makes up for it."
-                                </p>
-
-                                <p class="mb-3">
-                                    <span class="text-dark">★★★★</span>
-                                    <span class="text-muted">
-                                        Danielle K. · 01/08/25</span
-                                    >
-                                </p>
-
-                                <a
-                                    href="#"
-                                    class="btn btn-light rounded-pill px-4 border"
-                                >
-                                    ↓ Show more
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer class="bg-dark text-light py-4 mt-auto">
-            <div class="container">
-                <div class="row align-items-center gy-3">
-                    <div class="col-md-6">
-                        <h5 class="mb-1">FoodieVille</h5>
-                        <p class="mb-0 text-light-emphasis">
-                            Discover restaurants, explore menus, and enjoy great
-                            food all in one place.
+        </div>
+        <!-- restaurant info-->
+        <div class="container">
+            <div class="row gap-4 restaurant-layout">
+                <div class="col-md-7 h-100">
+                    <div>
+                        <h1 class="mb-0 mt-3">Yoi Sushi</h1>
+                        <p class="text-align-justify">
+                            133-22 39th Ave, Flushing, NY 11354
                         </p>
+                        Yoi Sushi is a modern Japanese restaurant
+                        specializing in fresh sushi, light soups, and simple
+                        seafood dishes. Its clean presentation and calm
+                        atmosphere make it a pleasant place for guests
+                        seeking fresh flavors, balanced meals, and a more
+                        refined casual dining experience.
                     </div>
-
-                    <div class="col-md-6 text-md-end">
-                        <a href="#" class="text-light text-decoration-none me-3"
-                            >Home</a
-                        >
-                        <a href="#" class="text-light text-decoration-none me-3"
-                            >Restaurants</a
-                        >
-                        <a href="#" class="text-light text-decoration-none me-3"
-                            >About</a
-                        >
-                        <a href="#" class="text-light text-decoration-none"
-                            >Contact</a
-                        >
+                    <div class="row py-4 menu-section-row">
+                        <div class="col-4 d-none d-md-block">
+                            <div id="list-example" class="list-group">
+                                <a class="list-group-item list-group-item-action" href="#list-item-1">California
+                                    Roll</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-2">Spicy Tuna
+                                    Roll</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-3">Salmon Nigiri</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-4">Shrimp Tempura
+                                    Roll</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-5">Miso Soup</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-6">Edamame</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-8 mh-100">
+                            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+                                class="scrollspy-example list-scroll-section" tabindex="0">
+                                <div id="list-item-1">
+                                    <div class="border rounded-3 p-3">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="img-container object-fit">
+                                                <img class="menu-item-img" src="img/restaurant4/californiaRoll.jpg"
+                                                    alt="" />
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-1">
+                                                    California Roll
+                                                </h6>
+                                                <p class="mb-0 text-muted">
+                                                    $8.99
+                                                </p>
+                                            </div>
+                                            <button type="button"
+                                                class="btn btn-primary btn-md rounded-5 plus-btn ms-auto"
+                                                data-bs-toggle="modal" data-bs-target="#menuModal">
+                                                <i class="bi bi-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="list-item-2">
+                                    <div class="border rounded-3 p-3">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="img-container object-fit">
+                                                <img class="menu-item-img" src="img/restaurant4/spicyTunaRoll.jpg"
+                                                    alt="" />
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-1">
+                                                    Spicy Tuna Roll
+                                                </h6>
+                                                <p class="mb-0 text-muted">
+                                                    $10.99
+                                                </p>
+                                            </div>
+                                            <button type="button"
+                                                class="btn btn-primary btn-md rounded-5 plus-btn ms-auto"
+                                                data-bs-toggle="modal" data-bs-target="#menuModal">
+                                                <i class="bi bi-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="list-item-3">
+                                    <div class="border rounded-3 p-3">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="img-container object-fit">
+                                                <img class="menu-item-img" src="img/restaurant4/SalmonNigiri.jpg"
+                                                    alt="" />
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-1">
+                                                    Salmon Nigiri
+                                                </h6>
+                                                <p class="mb-0 text-muted">
+                                                    $7.99
+                                                </p>
+                                            </div>
+                                            <button type="button"
+                                                class="btn btn-primary btn-md rounded-5 plus-btn ms-auto"
+                                                data-bs-toggle="modal" data-bs-target="#menuModal">
+                                                <i class="bi bi-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="list-item-4">
+                                    <div class="border rounded-3 p-3">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="img-container object-fit">
+                                                <img class="menu-item-img" src="img/restaurant4/shrimpTempuraRoll.jpg"
+                                                    alt="" />
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-1">
+                                                    Shrimp Tempura Roll
+                                                </h6>
+                                                <p class="mb-0 text-muted">
+                                                    $11.99
+                                                </p>
+                                            </div>
+                                            <button type="button"
+                                                class="btn btn-primary btn-md rounded-5 plus-btn ms-auto"
+                                                data-bs-toggle="modal" data-bs-target="#menuModal">
+                                                <i class="bi bi-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="list-item-5">
+                                    <div class="border rounded-3 p-3">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="img-container object-fit">
+                                                <img class="menu-item-img" src="img/restaurant4/miso-soup.jpg" alt="" />
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-1">
+                                                    Miso Soup
+                                                </h6>
+                                                <p class="mb-0 text-muted">
+                                                    $3.99
+                                                </p>
+                                            </div>
+                                            <button type="button"
+                                                class="btn btn-primary btn-md rounded-5 plus-btn ms-auto"
+                                                data-bs-toggle="modal" data-bs-target="#menuModal">
+                                                <i class="bi bi-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="list-item-6">
+                                    <div class="border rounded-3 p-3">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="img-container object-fit">
+                                                <img class="menu-item-img" src="img/restaurant4/edamame.jpg" alt="" />
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-1">
+                                                    Edamame
+                                                </h6>
+                                                <p class="mb-0 text-muted">
+                                                    $4.99
+                                                </p>
+                                            </div>
+                                            <button type="button"
+                                                class="btn btn-primary btn-md rounded-5 plus-btn ms-auto"
+                                                data-bs-toggle="modal" data-bs-target="#menuModal">
+                                                <i class="bi bi-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- menu items -->
 
-                <hr class="border-secondary my-3" />
+                <!-- Modal Section -->
+                <div class="col-md-3 pt-4 flex-fill text-end">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                        data-bs-target="#menuModal">
+                        Order Now
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-l modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="menuModalLabel">
+                                        Menu
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-start">
+                                    <form>
+                                        <div class="d-flex flex-column gap-3">
+                                            <div class="border rounded-3 p-2">
+                                                <div class="d-flex align-items-center gap-3 quantity-control">
+                                                    <div class="img-container flex-shrink-0">
+                                                        <img class="menu-item-img"
+                                                            src="img/restaurant4/californiaRoll.jpg" alt="" />
+                                                    </div>
 
-                <div class="text-center">
-                    <small class="text-light-emphasis"
-                        >&copy; 2026 FoodieVille. All rights reserved.</small
-                    >
+                                                    <div class="menu-item-info flex-grow-1">
+                                                        <h6 class="mb-1 menu-item-name">
+                                                            California Roll
+                                                        </h6>
+                                                        <p class="mb-0 text-muted menu-item-price">
+                                                            $8.99
+                                                        </p>
+                                                    </div>
+
+                                                    <div
+                                                        class="quantity-buttons d-flex align-items-center justify-content-end gap-2 flex-shrink-0">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm minus-btn">
+                                                            <i class="bi bi-dash"></i>
+                                                        </button>
+                                                        <span class="fw-semibold count">0</span>
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm plus-btn">
+                                                            <i class="bi bi-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="border rounded-3 p-2">
+                                                <div class="d-flex align-items-center gap-3 quantity-control">
+                                                    <div class="img-container flex-shrink-0">
+                                                        <img class="menu-item-img"
+                                                            src="img/restaurant4/spicyTunaRoll.jpg" alt="" />
+                                                    </div>
+
+                                                    <div class="menu-item-info flex-grow-1">
+                                                        <h6 class="mb-1 menu-item-name">
+                                                            Spicy Tuna Roll
+                                                        </h6>
+                                                        <p class="mb-0 text-muted menu-item-price">
+                                                            $10.99
+                                                        </p>
+                                                    </div>
+
+                                                    <div
+                                                        class="quantity-buttons d-flex align-items-center justify-content-end gap-2 flex-shrink-0">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm minus-btn">
+                                                            <i class="bi bi-dash"></i>
+                                                        </button>
+                                                        <span class="fw-semibold count">0</span>
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm plus-btn">
+                                                            <i class="bi bi-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="border rounded-3 p-2">
+                                                <div class="d-flex align-items-center gap-3 quantity-control">
+                                                    <div class="img-container flex-shrink-0">
+                                                        <img class="menu-item-img"
+                                                            src="img/restaurant4/SalmonNigiri.jpg" alt="" />
+                                                    </div>
+
+                                                    <div class="menu-item-info flex-grow-1">
+                                                        <h6 class="mb-1 menu-item-name">
+                                                            Salmon Nigiri
+                                                        </h6>
+                                                        <p class="mb-0 text-muted menu-item-price">
+                                                            $7.99
+                                                        </p>
+                                                    </div>
+
+                                                    <div
+                                                        class="quantity-buttons d-flex align-items-center justify-content-end gap-2 flex-shrink-0">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm minus-btn">
+                                                            <i class="bi bi-dash"></i>
+                                                        </button>
+                                                        <span class="fw-semibold count">0</span>
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm plus-btn">
+                                                            <i class="bi bi-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="border rounded-3 p-2">
+                                                <div class="d-flex align-items-center gap-3 quantity-control">
+                                                    <div class="img-container flex-shrink-0">
+                                                        <img class="menu-item-img"
+                                                            src="img/restaurant4/shrimpTempuraRoll.jpg" alt="" />
+                                                    </div>
+
+                                                    <div class="menu-item-info flex-grow-1">
+                                                        <h6 class="mb-1 menu-item-name">
+                                                            Shrimp Tempura
+                                                            Roll
+                                                        </h6>
+                                                        <p class="mb-0 text-muted menu-item-price">
+                                                            $11.99
+                                                        </p>
+                                                    </div>
+
+                                                    <div
+                                                        class="quantity-buttons d-flex align-items-center justify-content-end gap-2 flex-shrink-0">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm minus-btn">
+                                                            <i class="bi bi-dash"></i>
+                                                        </button>
+                                                        <span class="fw-semibold count">0</span>
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm plus-btn">
+                                                            <i class="bi bi-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="border rounded-3 p-2">
+                                                <div class="d-flex align-items-center gap-3 quantity-control">
+                                                    <div class="img-container flex-shrink-0">
+                                                        <img class="menu-item-img" src="img/restaurant4/miso-soup.jpg"
+                                                            alt="" />
+                                                    </div>
+
+                                                    <div class="menu-item-info flex-grow-1">
+                                                        <h6 class="mb-1 menu-item-name">
+                                                            Miso Soup
+                                                        </h6>
+                                                        <p class="mb-0 text-muted menu-item-price">
+                                                            $3.99
+                                                        </p>
+                                                    </div>
+
+                                                    <div
+                                                        class="quantity-buttons d-flex align-items-center justify-content-end gap-2 flex-shrink-0">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm minus-btn">
+                                                            <i class="bi bi-dash"></i>
+                                                        </button>
+                                                        <span class="fw-semibold count">0</span>
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm plus-btn">
+                                                            <i class="bi bi-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="border rounded-3 p-2">
+                                                <div class="d-flex align-items-center gap-3 quantity-control">
+                                                    <div class="img-container flex-shrink-0">
+                                                        <img class="menu-item-img" src="img/restaurant4/edamame.jpg"
+                                                            alt="" />
+                                                    </div>
+
+                                                    <div class="menu-item-info flex-grow-1">
+                                                        <h6 class="mb-1 menu-item-name">
+                                                            Edamame
+                                                        </h6>
+                                                        <p class="mb-0 text-muted menu-item-price">
+                                                            $4.99
+                                                        </p>
+                                                    </div>
+
+                                                    <div
+                                                        class="quantity-buttons d-flex align-items-center justify-content-end gap-2 flex-shrink-0">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm minus-btn">
+                                                            <i class="bi bi-dash"></i>
+                                                        </button>
+                                                        <span class="fw-semibold count">0</span>
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm plus-btn">
+                                                            <i class="bi bi-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="pt-2">
+                                                <label for="specialInstructions" class="form-label">Extra
+                                                    Directions</label>
+                                                <textarea class="form-control" id="specialInstructions" rows="3"
+                                                    placeholder="Example: No pickles, extra dressing, sauce on the side"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                        Cancel
+                                    </button>
+                                    <button type="button" class="btn btn-primary" onclick="checkoutRestaurant()">
+                                        Checkout
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-container py-4 overflow-hidden w-100" style="height: 350px">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.137520491938!2d-73.83622062416485!3d40.75899997138663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2600e850830b9%3A0xff68f22e69e8e096!2s133-22%2039th%20Ave%2C%20Flushing%2C%20NY%2011354!5e0!3m2!1sen!2sus!4v1773243279792!5m2!1sen!2sus"
+                            width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </section>
+    <section class="container mb-3">
+        <!-- review section -->
+        <div class="col-12 mt-4">
+            <div class="card p-3 rounded-4">
+                <div class="row g-3 align-items-start">
+                    <!-- left rating section -->
+                    <div class="col-md-3 text-md-center">
+                        <div class="card-body p-2">
+                            <h1 class="fw-bold mb-1">4.5</h1>
+                            <div class="text-warning fs-5 mb-1">★★★★★</div>
+                            <p class="text-muted mb-0">1500+ Ratings</p>
+                        </div>
+                    </div>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"
-        ></script>
-        <script src="js/restaurant1.js"></script>
-    </body>
+                    <!-- right review section -->
+                    <div class="col-md-9">
+                        <div class="card-body p-2">
+                            <p class="mb-2">
+                                "Best Sushi in the city! The seaweed is
+                                perfectly crispy and the toppings are always
+                                fresh. My go-to spot every Friday night."
+                            </p>
+
+                            <p class="mb-2">
+                                <span class="text-dark">★★★★★</span>
+                                <span class="text-muted">
+                                    Marco T. · 11/15/24</span>
+                            </p>
+
+                            <p class="mb-2">
+                                "Shrimp tempura roles are made perfectly "
+                            </p>
+
+                            <p class="mb-3">
+                                <span class="text-dark">★★★★</span>
+                                <span class="text-muted">
+                                    Danielle K. · 01/08/25</span>
+                            </p>
+
+                            <a href="#" class="btn btn-light rounded-pill px-4 border">
+                                ↓ Show more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-light py-4 mt-auto">
+        <div class="container">
+            <div class="row align-items-center gy-3">
+                <div class="col-md-6">
+                    <h5 class="mb-1">FoodieVille</h5>
+                    <p class="mb-0 text-light-emphasis">
+                        Discover restaurants, explore menus, and enjoy great
+                        food all in one place.
+                    </p>
+                </div>
+
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light text-decoration-none me-3">Home</a>
+                    <a href="#" class="text-light text-decoration-none me-3">Restaurants</a>
+                    <a href="#" class="text-light text-decoration-none me-3">About</a>
+                    <a href="#" class="text-light text-decoration-none">Contact</a>
+                </div>
+            </div>
+
+            <hr class="border-secondary my-3" />
+
+            <div class="text-center">
+                <small class="text-light-emphasis">&copy; 2026 FoodieVille. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="js/restaurant1.js"></script>
+</body>
+
 </html>

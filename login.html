@@ -72,7 +72,7 @@
                                     Coming back for more? Sign in to order from a restaurant near you
                                 </p>
 
-                                <form>
+                                <form id="login">
                                     <div class="form-group mb-3 ">
                                         <label for="exampleInputEmail1" class="mb-2">Email address</label>
                                         <input type="email" class="form-control mb-2 rounded-pill p-3z"
@@ -210,6 +210,14 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <script src="js/restaurant1.js"></script>
+    <script>
+        document.getElementById("login").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            sessionStorage.setItem("toastMessage", "Signed in successfully.");
+            window.location.href = "index.html";
+        });
+    </script>
 </body>
 
 </html>

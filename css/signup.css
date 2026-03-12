@@ -123,12 +123,12 @@
 }
 
 .signup-promo-card {
-    background: linear-gradient(180deg, #fc8a2e 0%, #f1ae66 100%);
+    background: linear-gradient(180deg, #f57421 0%, #f1ae66 100%);
     color: white;
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     overflow: hidden;
 }
 

@@ -74,7 +74,7 @@
                                     with ease.
                                 </p>
 
-                                <form>
+                                <form id="signup">
                                     <div class="row">
                                         <div class="form-group mb-3 col-lg-6 col-md-12">
                                             <label for="exampleInputFirstName1" class="mb-2">First Name</label>
@@ -84,10 +84,11 @@
 
                                         </div>
                                         <div class="form-group mb-3 col-lg-6 col-md-12">
-                                            <label for="exampleInputEmail1" class="mb-2">Email address</label>
-                                            <input type="email" class="form-control mb-2 rounded-pill p-3z"
-                                                id="exampleInputEmail1" aria-describedby="emailHelp"
-                                                placeholder="Enter email">
+                                            <label for="exampleInputLastName1" class="mb-2">Last Name</label>
+                                            <input type="lastName" class="form-control mb-2 rounded-pill p-3z"
+                                                id="exampleInputLastName1" aria-describedby="lastNameHelp"
+                                                placeholder="last name">
+
 
                                         </div>
                                     </div>
@@ -227,6 +228,14 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <script src="js/restaurant1.js"></script>
+    <script>
+        document.getElementById("signup").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            sessionStorage.setItem("toastMessage", "Signed in successfully.");
+            window.location.href = "index.html";
+        });
+    </script>
 </body>
 
 </html>
