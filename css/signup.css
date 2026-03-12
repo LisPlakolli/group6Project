@@ -1,0 +1,219 @@
+.signup-form-card,
+.signup-promo-card {
+    border-radius: 24px;
+    height: 100%;
+}
+
+.signup-form-card {
+    background-color: #f7f0ea;
+    padding: 2rem;
+}
+
+.signup-input-group .input-group-text,
+.signup-input-group .form-control {
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.signup-input-group .input-group-text {
+    color: #b17a52;
+}
+
+.signup-input-group .form-control {
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+}
+
+.signup-btn {
+    border-radius: 999px;
+    padding: 0.9rem 1.25rem;
+    font-weight: 600;
+}
+
+.signup-divider {
+    position: relative;
+    color: #8a8a8a;
+    font-size: 0.95rem;
+}
+
+.signup-divider::before,
+.signup-divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 42%;
+    height: 1px;
+    background-color: #dfc9bb;
+}
+
+.signup-divider::before {
+    left: 0;
+}
+
+.signup-divider::after {
+    right: 0;
+}
+
+.signup-divider span {
+    background-color: #f7f0ea;
+    padding: 0 0.75rem;
+    position: relative;
+    z-index: 1;
+}
+
+.signup-google-btn {
+    border-radius: 999px;
+    padding: 0.9rem 1.25rem;
+    border: 1px solid #b68e73;
+    background-color: white;
+}
+
+.signup-google-btn:hover {
+    background-color: #fdf1e8;
+    border-color: #f57421;
+    color: #2b2b2b;
+}
+
+.signup-login-text {
+    color: #555;
+}
+
+.signup-users-box {
+    background-color: #fff;
+    border: 1px solid #ead8cc;
+    border-radius: 20px;
+    padding: 1rem 1.25rem;
+}
+
+.signup-avatars {
+    display: flex;
+    align-items: center;
+}
+
+.signup-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+
+.overlap-avatar {
+    margin-left: -10px;
+}
+
+.signup-arrow-btn {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 1px solid #b68e73;
+    color: #2b2b2b;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    background-color: #fffaf6;
+}
+
+.signup-arrow-btn:hover {
+    background-color: #f57421;
+    color: white;
+    border-color: #f57421;
+}
+
+.signup-promo-card {
+    background: linear-gradient(180deg, #fc8a2e 0%, #f1ae66 100%);
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.signup-promo-image-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 1.5rem;
+}
+
+.signup-food-img {
+    width: 420px;
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.35));
+}
+.signup-promo-bottom {
+    background-color: rgba(255, 255, 255, 0.09);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 22px;
+    padding: 1.25rem;
+    backdrop-filter: blur(6px);
+}
+
+.signup-badge {
+    display: inline-block;
+    padding: 0.7rem 1.4rem;
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    border-radius: 999px;
+    font-weight: 500;
+}
+
+.promo-icon-btn {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    background: transparent;
+    color: white;
+    font-size: 1.05rem;
+}
+
+.promo-icon-btn:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.signup-promo-text {
+    color: rgba(255, 255, 255, 0.92);
+    max-width: 500px;
+}
+
+@media (max-width: 991.98px) {
+    .signup-title {
+        font-size: 2.35rem;
+    }
+
+    .signup-promo-title {
+        font-size: 1.8rem;
+    }
+
+    .signup-promo-image {
+        height: 260px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .signup-form-card,
+    .signup-promo-card {
+        padding: 1.5rem;
+    }
+
+    .signup-title {
+        font-size: 2rem;
+    }
+
+    .signup-promo-title {
+        font-size: 1.5rem;
+    }
+
+    .signup-users-box .d-flex.justify-content-between {
+        align-items: flex-start !important;
+    }
+
+    .signup-arrow-btn {
+        width: 48px;
+        height: 48px;
+    }
+}
